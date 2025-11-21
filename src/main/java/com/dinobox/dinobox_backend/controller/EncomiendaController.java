@@ -51,4 +51,11 @@ public class EncomiendaController {
     public void eliminarEncomienda(@PathVariable Long id) {
         encomiendaService.eliminar(id);
     }
+
+    // EncomiendaController.java
+
+    @GetMapping("/ping")
+    public String ping() {
+        return "¡El backend Dinobox responde!";
+    }
 }
